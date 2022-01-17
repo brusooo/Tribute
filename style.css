@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #080313;
+}
+
+h1{
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'The Nautigal', cursive;
+}
+
+
+.container{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 20px;
+}
+
+#img-div{
+    position: relative;
+    top: -220px;
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+#image{
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+
+#img-caption{
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+
+.details{
+    position: absolute;
+    margin: 30px;
+    top: 110px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+.details::-webkit-scrollbar{
+    display: none;
+}
+
+
+#tribute-info{
+    font-size: 1rem;
+    font-weight:100;
+    line-height: 26px;
+    padding: 20px 10px 0 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+#tribute-link{
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    background: #080313;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+    color: #FFF;
+    box-shadow: 8px 0 7px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;   
+    font-family: 'The Nautigal', cursive;
+}
+
+@media screen and (min-width:800px){
+    #image{
+        width: 500px;
+        object-fit: contain;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    #image{
+        width: 600px;
+        object-fit: fill;
+    }
+}
